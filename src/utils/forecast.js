@@ -12,7 +12,7 @@ const forecast = (long, lat, callback) => {
             const feelsLike = body.current.feelslike
             const weatherDesc = body.current.weather_descriptions[0]
             
-            callback(undefined, `${weatherDesc}, It is currently ${temp} but it feels like ${feelsLike}`)            
+            callback(undefined, `Weather Description: ${weatherDesc}. It is currently ${temp} F but, it feels like ${feelsLike} F`)            
         }
     })
 
