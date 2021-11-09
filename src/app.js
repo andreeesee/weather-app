@@ -5,7 +5,6 @@ const express = require('express')
 const hbs = require('hbs')
 
 const app = express()
-
 const port = process.env.PORT || 3000
 
 //Paths
@@ -71,10 +70,6 @@ app.get('/weather', (req, res) => {
             })
         })
     })
-    
-
-
-
 })
 
 app.get('/products', (req, res) => {
